@@ -8,8 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		30506AAF166764EF00989B44 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30506AAE166764EF00989B44 /* Foundation.framework */; };
-		30506AB2166764EF00989B44 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 30506AB1166764EF00989B44 /* main.mm */; };
-		30506AB6166764EF00989B44 /* Test.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 30506AB5166764EF00989B44 /* Test.1 */; };
+		6981E501166E85CA00697455 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6981E500166E85CA00697455 /* main.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -19,18 +18,16 @@
 			dstPath = /usr/share/man/man1/;
 			dstSubfolderSpec = 0;
 			files = (
-				30506AB6166764EF00989B44 /* Test.1 in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		30506AAA166764EF00989B44 /* Test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Test; sourceTree = BUILT_PRODUCTS_DIR; };
+		30506AAA166764EF00989B44 /* Delaunay2D */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Delaunay2D; sourceTree = BUILT_PRODUCTS_DIR; };
 		30506AAE166764EF00989B44 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		30506AB1166764EF00989B44 /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
-		30506AB4166764EF00989B44 /* Test-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Test-Prefix.pch"; sourceTree = "<group>"; };
-		30506AB5166764EF00989B44 /* Test.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Test.1; sourceTree = "<group>"; };
+		6981E500166E85CA00697455 /* main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = main.mm; path = Source/main.mm; sourceTree = SOURCE_ROOT; };
+		6981E503166E85D300697455 /* Delaunay2D-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Delaunay2D-Prefix.pch"; path = "Source/Delaunay2D-Prefix.pch"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +45,8 @@
 		30506A9F166764EF00989B44 = {
 			isa = PBXGroup;
 			children = (
-				30506AB0166764EF00989B44 /* Test */,
+				30506AB0166764EF00989B44 /* Source */,
+				30506AB3166764EF00989B44 /* Supporting Files */,
 				30506AAD166764EF00989B44 /* Frameworks */,
 				30506AAB166764EF00989B44 /* Products */,
 			);
@@ -57,7 +55,7 @@
 		30506AAB166764EF00989B44 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				30506AAA166764EF00989B44 /* Test */,
+				30506AAA166764EF00989B44 /* Delaunay2D */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,30 +68,30 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		30506AB0166764EF00989B44 /* Test */ = {
+		30506AB0166764EF00989B44 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				30506AB1166764EF00989B44 /* main.mm */,
-				30506AB5166764EF00989B44 /* Test.1 */,
-				30506AB3166764EF00989B44 /* Supporting Files */,
+				6981E500166E85CA00697455 /* main.mm */,
 			);
+			name = Source;
 			path = Test;
 			sourceTree = "<group>";
 		};
 		30506AB3166764EF00989B44 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				30506AB4166764EF00989B44 /* Test-Prefix.pch */,
+				6981E503166E85D300697455 /* Delaunay2D-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			path = Test;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		30506AA9166764EF00989B44 /* Test */ = {
+		30506AA9166764EF00989B44 /* Delaunay2D */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 30506AB9166764EF00989B44 /* Build configuration list for PBXNativeTarget "Test" */;
+			buildConfigurationList = 30506AB9166764EF00989B44 /* Build configuration list for PBXNativeTarget "Delaunay2D" */;
 			buildPhases = (
 				30506AA6166764EF00989B44 /* Sources */,
 				30506AA7166764EF00989B44 /* Frameworks */,
@@ -103,9 +101,9 @@
 			);
 			dependencies = (
 			);
-			name = Test;
+			name = Delaunay2D;
 			productName = Test;
-			productReference = 30506AAA166764EF00989B44 /* Test */;
+			productReference = 30506AAA166764EF00989B44 /* Delaunay2D */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -117,7 +115,7 @@
 				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = CrossProduct;
 			};
-			buildConfigurationList = 30506AA4166764EF00989B44 /* Build configuration list for PBXProject "Test" */;
+			buildConfigurationList = 30506AA4166764EF00989B44 /* Build configuration list for PBXProject "Delaunay2D" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -129,7 +127,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				30506AA9166764EF00989B44 /* Test */,
+				30506AA9166764EF00989B44 /* Delaunay2D */,
 			);
 		};
 /* End PBXProject section */
@@ -139,7 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30506AB2166764EF00989B44 /* main.mm in Sources */,
+				6981E501166E85CA00697455 /* main.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,8 +201,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Test/Test-Prefix.pch";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "Source/Delaunay2D-Prefix.pch";
+				PRODUCT_NAME = Delaunay2D;
 			};
 			name = Debug;
 		};
@@ -212,15 +210,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Test/Test-Prefix.pch";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "Source/Delaunay2D-Prefix.pch";
+				PRODUCT_NAME = Delaunay2D;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		30506AA4166764EF00989B44 /* Build configuration list for PBXProject "Test" */ = {
+		30506AA4166764EF00989B44 /* Build configuration list for PBXProject "Delaunay2D" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				30506AB7166764EF00989B44 /* Debug */,
@@ -229,13 +227,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		30506AB9166764EF00989B44 /* Build configuration list for PBXNativeTarget "Test" */ = {
+		30506AB9166764EF00989B44 /* Build configuration list for PBXNativeTarget "Delaunay2D" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				30506ABA166764EF00989B44 /* Debug */,
 				30506ABB166764EF00989B44 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
